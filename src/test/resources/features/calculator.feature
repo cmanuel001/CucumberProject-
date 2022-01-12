@@ -1,4 +1,4 @@
-@calculator @smoke
+@calculator@smoke
 Feature: Calculator Tests
 
   Background:

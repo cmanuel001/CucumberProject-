@@ -1,6 +1,6 @@
-@percent @smoke
+@percent
 Feature: Calculate 5% multiple values
-
+  @smoke
   Scenario: User calculating 5% values
     Given User is on percentage calculator page
     Then User should see following calculations:

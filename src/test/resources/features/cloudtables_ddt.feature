@@ -1,6 +1,6 @@
-@cloudtables @smoke
+@cloudtables
 Feature: DDT example with Cloudtables
-
+  @smoke
   Scenario Outline: Adding multiple users to the table
     Given User is on cloudtables homepage
     When User clicks on New button

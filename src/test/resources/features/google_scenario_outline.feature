@@ -1,6 +1,6 @@
-@google_scenario_outline @smoke
+@google_scenario_outline
 Feature: Data driven testing using Scenario outline with Examples table
-
+  @smoke
   Scenario Outline: Google capital cities search
     Given User is on Google home page
     When User searches for "<country>" capital
