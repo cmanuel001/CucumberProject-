@@ -1,4 +1,4 @@
-@rerun
+@rerun @smoke
 Feature: Rerunning failed scenarios
 
   Scenario: one

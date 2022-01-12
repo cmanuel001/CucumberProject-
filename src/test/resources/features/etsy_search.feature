@@ -1,4 +1,4 @@
-@etsy @regression #this is a tag
+@etsy @smoke #this is a tag
 Feature: User etsy search
   As a user, when i search for item, I should see the results.
 
