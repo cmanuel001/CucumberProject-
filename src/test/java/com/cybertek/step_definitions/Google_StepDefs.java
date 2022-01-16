@@ -1,6 +1,7 @@
 package com.cybertek.step_definitions;
 
 import com.cybertek.pages.GoogleSearchPage;
+import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,6 +10,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Google_StepDefs {
     GoogleSearchPage searchPage = new GoogleSearchPage();
@@ -60,6 +62,9 @@ public class Google_StepDefs {
     @Then("User should see {string} in the result")
     public void userShouldSeeInTheResult(String capitalCity) {
         System.out.println("Expected Capital City name: " + capitalCity);
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        BrowserUtils.sleep(3);
         Assert.assertEquals(capitalCity, searchPage.searchResultCityName.getText());
+        BrowserUtils.sleep(2);
     }
 }

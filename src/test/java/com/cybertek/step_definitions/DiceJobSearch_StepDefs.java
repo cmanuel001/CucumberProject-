@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-public class DiceJobSeatch_StepDefs {
+public class DiceJobSearch_StepDefs {
 
     @Given("User is on dice homepage")
     public void user_is_on_dice_homepage() {
