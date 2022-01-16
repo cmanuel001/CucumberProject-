@@ -24,7 +24,7 @@ public class ReRun_Demo_StepDefs {
     @Then("Result should be sum of three numbers")
     public void result_should_be_sum_of_three_numbers() {
         System.out.println("Result should be sum of three numbers");
-        Assert.assertEquals(5, 10); //intentionally failing
+        Assert.assertEquals(10, 10); //intentionally failing
     }
 
     @Given("User divides two numbers")
@@ -45,6 +45,6 @@ public class ReRun_Demo_StepDefs {
     @Then("Result should be multiplication result")
     public void result_should_be_multiplication_result() {
         System.out.println("Result should be multiplication result");
-        Assert.assertEquals(22, 21);
+        Assert.assertEquals(21, 21);
     }
 }

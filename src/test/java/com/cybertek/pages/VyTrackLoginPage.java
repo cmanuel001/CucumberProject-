@@ -35,7 +35,7 @@ public class VyTrackLoginPage extends BasePage{
 
 
     public void login(String user, String pass){
-        _username.sendKeys(user);
+  _username.sendKeys(user);
         _password.sendKeys(pass);
         getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         loginBtn.click();
